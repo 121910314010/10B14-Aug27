@@ -1,0 +1,19 @@
+#To find lcm and gcd of three numbers
+
+import math
+x= int(input('Enter First number :'))
+y =int(input('Enter Second number :'))
+z= int(input('Enter Second number :'))
+gcd_ans = math.gcd(x,y)
+gcd_final=math.gcd(gcd_ans,z)
+lcm_ans = x*y/ gcd_final
+print("LCM of three numbers is:",lcm_ans)
+print("GCD of three numbers is:",gcd_final)
+
+
+Output:-
+Enter First number :10
+Enter Second number :20
+Enter Second number :30
+LCM of three numbers is: 20.0
+GCD of three numbers is: 10
