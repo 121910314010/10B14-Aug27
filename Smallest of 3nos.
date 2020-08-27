@@ -1,0 +1,21 @@
+#To find smallest among three numbers
+
+num1 = float(input("Enter First number: "))
+num2 = float(input("Enter Second number: "))
+num3 = float(input("Enter Third number: "))
+
+if (num1 <= num2) and (num1 <= num3) :
+    smallest = num1
+elif (num2 <= num1) and (num2 <= num3):
+        smallest = num2
+else:
+     smallest = num3
+
+print("The smallest number is ", smallest)
+
+
+Output:-
+Enter First number: 10
+Enter Second number: 20
+Enter Third number: 50
+The smallest number is  10.0
