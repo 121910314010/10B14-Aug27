@@ -1,0 +1,16 @@
+#To find lcm and gcd of two numbwrs
+
+import math
+x= int(input('Enter First number :'))
+y = int(input('Enter Second number :'))
+gcd_ans = math.gcd(x, y)
+lcm_ans = x * y/ gcd_ans
+print("LCM of two numbers is :",lcm_ans)
+print("GCD of two numbers is :",gcd_ans)
+
+
+Output:-
+Enter First number :10
+Enter Second number :20
+LCM of two numbers is : 20.0
+GCD of two numbers is : 10
