@@ -1,0 +1,37 @@
+#Program of all 5 arithematic operations 
+
+
+a = int(input("Enter the value of a : "))
+b = int(input("Enter the value of b : "))
+
+# Addition of numbers
+add = a + b
+
+# Subtraction of numbers
+sub = a - b
+
+# Multiplication of number
+mul = a * b
+
+# Division of number
+div = a / b
+
+# Modulo of both number
+mod = a % b
+
+# print results
+print("Addition of two numbers is ",add)
+print("Subtraction of two numbers is ",sub)
+print("Multiplication of two numbers is ",mul)
+print("Division of two numbers is ",div)
+print("Modulos of two numbers is ",mod)
+
+Output:-
+
+Enter the value of a : 10
+Enter the value of b : 20
+Addition of two numbers is  30
+Subtraction of two numbers is  -10
+Multiplication of two numbers is  200
+Division of two numbers is  0.5
+Modulos of two numbers is  10
