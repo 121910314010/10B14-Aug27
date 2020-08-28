@@ -1,0 +1,40 @@
+#Add sum of digits of given number and to find whether the given number is Armstrong number or not 
+
+
+num = int(input("Enter a number:"))
+x = 0
+while(num > 0):
+    digit = num % 10
+    x = x + digit
+    num = num // 10
+print("The sum of digits is:",x)
+
+
+
+
+
+# Changed num variable to string,
+# and calculated the length (number of digits)
+order = len(str(num))
+
+# initialize sum
+sum = 0
+
+# find the sum of the cube of each digit
+temp = num
+while temp > 0:
+   digit = temp % 10
+   sum += digit ** order
+   temp //= 10
+
+# display the result
+if num == sum:
+   print(num,"is an Armstrong number")
+else:
+   print(num,"is not an Armstrong number")
+   
+   
+   Output:-
+   Enter a number:1634
+The sum of digits is: 14
+1634 is an Armstrong number
