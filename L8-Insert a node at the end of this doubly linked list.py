@@ -1,0 +1,69 @@
+# Insert a node at the end of this doubly linked list .  
+class Node:    
+    def _init_(self,data):    
+        self.data = data;    
+        self.previous = None;    
+        self.next = None;    
+            
+class InsertEnd:    
+    
+    def _init_(self):    
+        self.head = None;    
+        self.tail = None;    
+            
+     
+    def addAtEnd(self, data):    
+         
+        newNode = Node(data);    
+            
+           
+        if(self.head == None):    
+              
+            self.head = self.tail = newNode;    
+              
+            self.head.previous = None;    
+                
+            self.tail.next = None;    
+        
+        else:    
+              
+            self.tail.next = newNode;    
+            
+            newNode.previous = self.tail;    
+              
+            self.tail = newNode;    
+              
+            self.tail.next = None;    
+                
+     
+    def display(self):    
+           
+        current = self.head;    
+        if(self.head == None):    
+            print("List is empty");    
+            return;    
+        print("Adding a node to the end of the list: ");    
+        while(current != None):    
+            #Prints each node by incrementing pointer.    
+            print(current.data),    
+            current = current.next;    
+                
+        print();    
+            
+dList = InsertEnd();    
+     
+   
+dList.addAtEnd(21);    
+dList.display();    
+   
+dList.addAtEnd(19);    
+dList.display();    
+ 
+dList.addAtEnd(87);    
+dList.display();    
+ 
+dList.addAtEnd(95);    
+dList.display();    
+ 
+dList.addAtEnd(12);    
+dList.display();
